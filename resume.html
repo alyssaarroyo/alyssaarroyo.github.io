@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alyssa Arroyo — Resume</title>
+<meta name="description" content="Resume of Alyssa Arroyo: technology adoption, learning & enablement, and experience development.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1b2b3c; --teal:#2f7d7b; --teal-soft:#eef4f2; --cream:#fbfaf6;
+    --ink:#1b2b3c; --muted:#5f6b76; --rule:#d9e0dd;
+    color-scheme: light;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:inherit}
+  html,body{margin:0}
+  body{background:var(--cream);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+  header{background:var(--navy);color:#fff;border-top:6px solid var(--teal)}
+  header .wrap{padding-top:clamp(32px,6vw,52px);padding-bottom:clamp(32px,6vw,48px)}
+  h1{font-family:"Libre Caslon Text",Georgia,serif;font-weight:700;font-size:clamp(2rem,6vw,2.75rem);letter-spacing:-.01em;margin:0}
+  .tagline{margin:14px 0 0;color:#8cd7d0;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+  .contact{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;padding:0;list-style:none;font-size:.9rem;color:#c9d6de}
+  .contact a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+  .contact a:hover{color:#fff;border-color:#fff}
+  header hr{border:0;border-top:1px solid rgba(255,255,255,.2);margin:26px 0}
+  .summary{font-size:1.08rem;line-height:1.6;margin:0;color:#e8eef2}
+  .actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px;margin-top:28px}
+  .link-btn{color:#8cd7d0;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid #8cd7d0;padding-bottom:3px}
+  .print-btn{display:inline-flex;align-items:center;gap:10px;background:none;color:#fff;border:1.5px solid rgba(255,255,255,.75);border-radius:4px;padding:12px 20px;font:800 .8rem Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  .print-btn:hover{background:rgba(255,255,255,.08)}
+  a:focus-visible,button:focus-visible{outline:3px solid #8cd7d0;outline-offset:3px}
+
+  main .wrap{padding-top:44px;padding-bottom:56px}
+  section{margin-bottom:44px}
+  .section-title{display:flex;align-items:center;gap:20px;margin:0 0 24px;color:var(--teal);font-size:.8rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+  .section-title::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+  .expertise{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:0;padding:0;list-style:none}
+  .expertise li{background:var(--teal-soft);border:1px solid var(--rule);border-radius:3px;padding:16px 20px;color:#244a4c;font-weight:600;font-size:.95rem}
+
+  .job{padding:26px 0;border-bottom:1px solid var(--rule)}
+  .job:first-of-type{padding-top:0}
+  .job:last-of-type{border-bottom:0}
+  .job h3{margin:0;font-size:clamp(1.05rem,3vw,1.3rem);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1.25}
+  .dates{margin:6px 0 0;color:var(--teal);font-weight:600;font-size:.95rem}
+  .org{margin:2px 0 12px;color:var(--muted);font-weight:500;font-size:.95rem}
+  .job ul{margin:0;padding-left:1.2em}
+  .job li{margin:8px 0;padding-left:4px}
+  .job li::marker{color:var(--teal)}
+
+  h4{margin:0 0 10px;font-size:.95rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+  .block{margin-bottom:28px}
+  .block p{margin:0;color:var(--muted)}
+
+  @media print{
+    @page{size:letter;margin:.45in .55in}
+    :root{padding:0}
+    body{font-size:10pt;line-height:1.4;background:#fff}
+    .wrap{max-width:none;padding:0}
+    header,.expertise li{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    header{border-top-width:4px}
+    header .wrap{padding:18px 22px}
+    header hr{margin:12px 0}
+    .actions{display:none}
+    .contact a{border:0}
+    main .wrap{padding:18px 0 0}
+    section{margin-bottom:18px}
+    .section-title{margin-bottom:10px}
+    .expertise{grid-template-columns:repeat(3,1fr);gap:6px}
+    .expertise li{padding:6px 10px;font-size:9pt}
+    .job{padding:10px 0;break-inside:avoid}
+    .job li{margin:3px 0}
+    .block{margin-bottom:10px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Alyssa Arroyo</h1>
+    <p class="tagline">Technology Adoption · Learning &amp; Enablement · Experience Development</p>
+    <ul class="contact">
+      <li><a href="mailto:alyssaparroyo@gmail.com">alyssaparroyo@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/alyssa-arroyo-7021436" target="_blank" rel="noopener noreferrer">linkedin.com/in/alyssa-arroyo-7021436</a></li>
+    </ul>
+    <hr>
+    <p class="summary">I design the bridge between technology and the people expected to use it. With 15+ years of experience, I turn complex tools into practical, adopted solutions, specializing in AI enablement, learning experience design, and cross-functional collaboration.</p>
+    <div class="actions">
+      <a class="link-btn" href="index.html">Visit my website</a>
+      <button class="print-btn" type="button" onclick="window.print()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print resume
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section aria-labelledby="expertise">
+      <h2 class="section-title" id="expertise">Core Expertise</h2>
+      <ul class="expertise">
+        <li>Technology Adoption &amp; Enablement</li>
+        <li>Learning Experience Design</li>
+        <li>AI Adoption &amp; Readiness</li>
+        <li>Facilitation &amp; Coaching</li>
+        <li>Cross-Functional Collaboration</li>
+        <li>Change Enablement</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 class="section-title" id="experience">Professional Experience</h2>
+
+      <article class="job">
+        <h3>Senior Facilitator — Educational Technology</h3>
+        <p class="dates">2026–Present</p>
+        <p class="org">Lower Hudson Regional Information Center (LHRIC)</p>
+        <ul>
+          <li>Design and deliver Model Schools programming across member districts, including self-paced courses, drop-in sessions, and in-person and virtual workshops spanning STEAM, AI literacy, Google Workspace, Microsoft 365, and instructional technology tools.</li>
+          <li>Serve as Lead Senior Facilitator on a 13-building Google Workspace for Education Plus implementation, aligning adoption, professional learning, and technical readiness with district leadership.</li>
+          <li>Support district-level AI adoption through hands-on coaching and leadership readiness conversations, translating field experience into stronger internal training and strategy.</li>
+          <li>Support Schoology-to-Google Classroom transitions, using Gemini and integrated AI capabilities to streamline content migration and reduce manual workflow steps.</li>
+          <li>Coordinate technical touch points, resources, and vendor communications supporting Google Workspace and Classroom transitions across a growing list of member districts.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Instructional Technology Support</h3>
+        <p class="dates">2020–2025</p>
+        <p class="org">Yorktown Central School District</p>
+        <ul>
+          <li>Led implementation of New York State Computer Science &amp; Digital Fluency Standards district-wide through stakeholder learning, current-state assessment, grade-band gap analysis, and collaboration with library media specialists.</li>
+          <li>Co-designed a STEAM-focused K–6 summer enrichment curriculum, translating standards-aligned content into hands-on, grade-appropriate learning experiences.</li>
+          <li>Partnered with building leadership to design customized support for teacher teams, applying cognitive coaching and gradual-release methodology to strengthen practice.</li>
+          <li>Designed faculty training on emerging technologies and supported early AI adoption through MagicSchool training tailored to teachers, administrative staff, and CTAs.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Facilitator — Educational Technology</h3>
+        <p class="dates">2015–2020</p>
+        <p class="org">Lower Hudson Regional Information Center (LHRIC)</p>
+        <ul>
+          <li>Supported approximately 12 districts annually within a 72-district regional organization, designing hands-on computer science, maker/STEAM, digital citizenship, robotics, and cloud collaboration programming.</li>
+          <li>Contributed to the CS &amp; STEAM Academy, supporting coach and teacher cohorts and developing customized professional learning that helped teachers map curriculum to available technology.</li>
+          <li>Designed sessions for the regional Technology Leadership Institute and Tech Summit covering design thinking and emerging technology integration for district teams.</li>
+          <li>Modified professional learning workshops and supported districts adapting programming for remote and blended learning during 2020 school closures.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Ed Tech Teacher &amp; Integration Specialist</h3>
+        <p class="dates">2014–2015</p>
+        <p class="org">The Karafin School</p>
+        <ul>
+          <li>Taught digital literacy and transferable computer skills to grades 9–12, creating and maintaining a student-run technology helpdesk that built peer collaboration and technical skills.</li>
+          <li>Led adoption of a new Learning Management System and trained teachers on intentional classroom technology use through centralized documentation and ongoing learning materials.</li>
+          <li>Supported selection and onboarding of a managed IT services provider as the primary point of contact for support, maintenance, and improvement needs.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Technical Trainer</h3>
+        <p class="dates">2013–2014</p>
+        <p class="org">Knighted, an Intelligrated Company</p>
+        <ul>
+          <li>Designed and delivered enterprise warehouse management software training, partnering with developers and QA to validate functionality from the end-user perspective.</li>
+          <li>Completed specialized training on parent-company operations and conveyor software systems, then documented and developed learning materials for the order picking system.</li>
+          <li>Led knowledge transfer on the training function to support a smooth transition and department build-out with a newly appointed Director of Learning &amp; Development.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Computer Teacher | Webmaster | Educational Technology Specialist</h3>
+        <p class="dates">2011–2013</p>
+        <p class="org">The Karafin School</p>
+        <ul>
+          <li>Delivered individualized instruction with assistive technologies aligned to IEP goals and built original courses in digital citizenship, app and game development, audio development, and graphic design.</li>
+          <li>Built budget-conscious learning solutions, including a class website with a student-contributed blog and a teacher resource center for staff development.</li>
+          <li>Migrated the school website from outdated HTML to Weebly, redesigned its structure and content, added traffic analytics, and delivered in-person technology training for teachers.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 class="section-title" id="education">Education, Credentials &amp; Technology</h2>
+      <div class="block">
+        <h4>Education</h4>
+        <p>M.S.Ed., Educational Technology Specialist — Pace University<br>
+        B.A., Liberal Arts (New Media) — Purchase College<br>
+        A.A.S., Multimedia Management &amp; Development — The College of Westchester</p>
+      </div>
+      <div class="block">
+        <h4>Credentials</h4>
+        <p>Educational Technology Specialist K–12 · Google Certified Educator · Microsoft Innovative Educator · Common Sense Educator</p>
+      </div>
+      <div class="block">
+        <h4>Technology Proficiencies</h4>
+        <p>Google Workspace &amp; Microsoft 365 (OneDrive, PowerPoint) · AI Tools (Gemini, Copilot, Canva AI) · AI Literacy &amp; Instructional Platforms (SchoolAI, MagicSchool, Brisk) · LMS/CMS Platforms (Schoology, Canvas, Finalsite, Blackboard, Nearpod, Seesaw) · Emerging Tech (SAM Labs, Wayground) · Canva &amp; Adobe Creative Cloud</p>
+      </div>
+    </section>
+  </div>
+</main>
+</body>
+</html>
